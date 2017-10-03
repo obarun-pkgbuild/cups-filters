@@ -3,7 +3,7 @@
 # 						Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=cups-filters
-pkgver=1.17.7
+pkgver=1.17.8
 pkgrel=2
 pkgdesc="OpenPrinting CUPS Filters"
 arch=(x86_64)
@@ -19,8 +19,8 @@ optdepends=('ghostscript: for non-PostScript printers to print with CUPS to conv
 backup=(etc/fonts/conf.d/99pdftoopvp.conf
         etc/cups/cups-browsed.conf)
 source=(https://www.openprinting.org/download/cups-filters/$pkgname-$pkgver.tar.xz)
-sha256sums=('5c6b59307f439a87e35b8dc67268a14a7cb5ebbdc8898264d21974f7e649e3d5')
-validpgpkeys=('6DD4217456569BA711566AC7F06E8FDE7B45DAAC') # Eric Vidal
+sha256sums=('9acefd72f8e6a6e5fb6e80d37aad8c712c326bf484afb735e8ff7d7b86975870')
+validpgpkeys=('9acefd72f8e6a6e5fb6e80d37aad8c712c326bf484afb735e8ff7d7b86975870') # Eric Vidal
 
 build() {
   cd $pkgname-$pkgver
