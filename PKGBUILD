@@ -4,7 +4,7 @@
 
 pkgname=cups-filters
 pkgver=1.17.9
-pkgrel=3
+pkgrel=4
 pkgdesc="OpenPrinting CUPS Filters"
 arch=(x86_64)
 url="https://wiki.linuxfoundation.org/openprinting/cups-filters"
@@ -23,6 +23,7 @@ sha256sums=('98ae3f8c8309ea950144e582d252e65f4636e8812832a982edd0ab83eddef544')
 validpgpkeys=('9acefd72f8e6a6e5fb6e80d37aad8c712c326bf484afb735e8ff7d7b86975870') # Eric Vidal
 
 build() {
+	export PYTHONPATH="/usr/share/glib-2.0"
   cd $pkgname-$pkgver
   ./configure --prefix=/usr  \
     --sysconfdir=/etc \
