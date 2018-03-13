@@ -3,8 +3,8 @@
 # 						Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=cups-filters
-pkgver=1.20.0
-pkgrel=2
+pkgver=1.20.1
+pkgrel=3
 pkgdesc="OpenPrinting CUPS Filters"
 arch=(x86_64)
 url="https://wiki.linuxfoundation.org/openprinting/cups-filters"
@@ -18,7 +18,7 @@ optdepends=('ghostscript: for non-PostScript printers to print with CUPS to conv
 	    'antiword: needed to convert MS Word documents (requires also docx2txt (AUR)')
 backup=(etc/cups/cups-browsed.conf)
 source=(https://www.openprinting.org/download/cups-filters/$pkgname-$pkgver.tar.xz)
-sha256sums=('d7f65710960d6fe7c94e54cafdb3f8e4d23b7972db556f22ee95b35059bcd63c')
+sha256sums=('b36b58f8d4d776d337f22b7b89794afbce6fd10e8e9066a89591d8f2210f3d62')
 validpgpkeys=('9acefd72f8e6a6e5fb6e80d37aad8c712c326bf484afb735e8ff7d7b86975870') # Eric Vidal
 
 build() {
