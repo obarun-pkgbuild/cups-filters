@@ -4,7 +4,7 @@
 
 pkgname=cups-filters
 pkgver=1.20.3
-pkgrel=2
+pkgrel=3
 pkgdesc="OpenPrinting CUPS Filters"
 arch=(x86_64)
 url="https://wiki.linuxfoundation.org/openprinting/cups-filters"
